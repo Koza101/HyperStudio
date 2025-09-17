@@ -72,18 +72,18 @@ public class MonitorControl : CBC {
         eb.Invoke("tip", "Remove Screen: " + id);
       }
 
-      // ctrl + '+'/'-' to bend the monitor, ctrl + '0' to toggle bend
-      // if (Input.GetKey(KeyCode.LeftControl)) {
-      //   if (Input.GetKey(KeyCode.Equals)) {
-      //     texture.radius += 8 * Time.deltaTime;
-      //   }
-      //   if (Input.GetKey(KeyCode.Minus)) {
-      //     texture.radius -= 8 * Time.deltaTime;
-      //   }
-      //   if (Input.GetKeyDown(KeyCode.Alpha0)) {
-      //     texture.bend = !texture.bend;
-      //   }
-      // }
+      ctrl + '+'/'-' to bend the monitor, ctrl + '0' to toggle bend
+      if (Input.GetKey(KeyCode.LeftControl)) {
+        if (Input.GetKey(KeyCode.Equals)) {
+          texture.radius += 8 * Time.deltaTime;
+        }
+        if (Input.GetKey(KeyCode.Minus)) {
+          texture.radius -= 8 * Time.deltaTime;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha0)) {
+          texture.bend = !texture.bend;
+        }
+      }
 
       // ctrl + j/k/l/u/i/o to rotate monitor
       if (Input.GetKey(KeyCode.LeftControl)) {

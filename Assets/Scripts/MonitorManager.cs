@@ -37,8 +37,8 @@ public class MonitorManager : CBC {
           obj.transform.position = config.Position;
           obj.transform.rotation = Quaternion.Euler(config.Rotation);
           obj.transform.localScale = config.Scale;
-          // texture.bend = config.Bend;
-          // texture.radius = config.BendRadius;
+          texture.bend = config.Bend;
+          texture.radius = config.BendRadius;
         } else {
           obj.transform.localScale = new Vector3(1 / scale, 1 / scale, 1);
           // place the monitor according to the system settings
