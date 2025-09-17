@@ -72,7 +72,7 @@ public class MonitorControl : CBC {
         eb.Invoke("tip", "Remove Screen: " + id);
       }
 
-      ctrl + '+'/'-' to bend the monitor, ctrl + '0' to toggle bend
+      // ctrl + '+'/'-' to bend the monitor, ctrl + '0' to toggle bend
       if (Input.GetKey(KeyCode.LeftControl)) {
         if (Input.GetKey(KeyCode.Equals)) {
           texture.radius += 8 * Time.deltaTime;
